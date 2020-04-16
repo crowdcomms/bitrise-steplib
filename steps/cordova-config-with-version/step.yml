@@ -8,14 +8,14 @@
 # - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
 
 title: |-
-  Manipulate cordova config.xml
+  Manipulate cordova config.xml including the version number
 summary: |
   Manipulate cordova config.xml including the version number
 description: |
   Manipulate cordova config.xml including the version number
-website: https://github.com/platanus/bitrise-step-cordova-config
-source_code_url: https://github.com/platanus/bitrise-step-cordova-config
-support_url: https://github.com/platanus/bitrise-step-cordova-config/issues
+website: https://github.com/crowdcomms/bitrise-step-cordova-config
+source_code_url: https://github.com/crowdcomms/bitrise-step-cordova-config
+support_url: https://github.com/crowdcomms/bitrise-step-cordova-config/issues
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
