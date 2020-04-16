@@ -1,5 +1,4 @@
-title: |-
-  Manipulate cordova config.xml including the version number
+title: Manipulate cordova config.xml including the version number
 summary: |
   Manipulate cordova config.xml including the version number
 description: |
@@ -7,6 +6,9 @@ description: |
 website: https://github.com/crowdcomms/bitrise-step-cordova-config
 source_code_url: https://github.com/crowdcomms/bitrise-step-cordova-config
 support_url: https://github.com/crowdcomms/bitrise-step-cordova-config/issues
+source:
+  git: https://github.com/crowdcomms/bitrise-step-cordova-config.git
+  commit: 52b94299923f867a1c959e54c8baffee8a22eac1
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
@@ -15,14 +17,13 @@ project_type_tags:
   - ionic
 type_tags:
   - utility
-
+toolkit:
+  bash:
+    entry_file: step.sh
 is_requires_admin_user: true
 is_always_run: false
 is_skippable: false
 run_if: ""
-toolkit:
-  bash:
-    entry_file: step.sh
 inputs:
   - name: $CORDOVA_NAME
     opts:
