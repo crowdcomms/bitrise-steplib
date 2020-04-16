@@ -1,14 +1,12 @@
-title: Manipulate cordova config.xml including the version number
+title: |-
+  Manipulate cordova config.xml including the version number
 summary: |
   Manipulate cordova config.xml including the version number
 description: |
   Manipulate cordova config.xml including the version number
-website: https://github.com/crowdcomms/bitrise-step-cordova-config
-source_code_url: https://github.com/crowdcomms/bitrise-step-cordova-config
-support_url: https://github.com/crowdcomms/bitrise-step-cordova-config/issues
-source:
-  git: https://github.com/crowdcomms/bitrise-step-cordova-config.git
-  commit: 52b94299923f867a1c959e54c8baffee8a22eac1
+website: https://github.com/platanus/bitrise-step-cordova-config
+source_code_url: https://github.com/platanus/bitrise-step-cordova-config
+support_url: https://github.com/platanus/bitrise-step-cordova-config/issues
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
@@ -17,13 +15,13 @@ project_type_tags:
   - ionic
 type_tags:
   - utility
-toolkit:
-  bash:
-    entry_file: step.sh
 is_requires_admin_user: true
 is_always_run: false
 is_skippable: false
 run_if: ""
+toolkit:
+  bash:
+    entry_file: step.sh
 inputs:
   - name: $CORDOVA_NAME
     opts:
@@ -38,11 +36,11 @@ inputs:
       is_expand: true
       is_required: false
   - version: $CORDOVA_VERSION
-      opts:
-        title: Cordova version
-        summary: Modify the attribute `version` the config.xml file
-        is_expand: true
-        is_required: false
+    opts:
+      title: Cordova version
+      summary: Modify the attribute `version` the config.xml file
+      is_expand: true
+      is_required: false
   - android_version_code: $CORDOVA_ANDROID_VERSION_CODE
     opts:
       title: Android version code
